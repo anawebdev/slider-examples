@@ -1,0 +1,42 @@
+.css-carousel {
+  overflow: hidden;
+}
+
+.css-carousel .css-img {
+  width: 80%;
+  max-width: 700px;
+/*   height: 900px; */
+  height: auto;
+  display: block;
+  margin-top: 40px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  -webkit-animation-name: css-animation-fade;
+  -webkit-animation-duration: 30s;
+  -webkit-animation-iteration-count: infinite;
+}
+.css-carousel .css-img:nth-child(2){
+  -webkit-animation-delay: 5s;
+}
+.css-carousel .css-img:nth-child(3){
+  -webkit-animation-delay: 10s;
+}
+.css-carousel .css-img:nth-child(4){
+  -webkit-animation-delay: 15s;
+}
+.css-carousel .css-img:nth-child(5){
+  -webkit-animation-delay: 20s;
+}
+.css-carousel .css-img:nth-child(6){
+  -webkit-animation-delay: 25s;
+}
+
+@-webkit-keyframes css-animation-fade {
+  from { opacity: 0;}
+  5% { opacity: 1;}
+  15% { opacity: 1;}
+  20% { opacity: 0;}
+  to { opacity: 0;}
+}
